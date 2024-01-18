@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="h-16 w-full bg-blue-950 text-white text-center pt-2">
+        <h1 class="font-extrabold text-3xl">Rock Paper Scissor</h1>
+    </nav>
+    <main>
+        <div class=" mt-10 mx-96 flex justify-center">
+            <div id="rock" class="cursor-pointer"><img class="h-40 w-48 mx-10 rounded-full hover:border-4 border-black" src="rock.png" alt="rock" /></div>
+            <div id="paper" class="cursor-pointer"><img class="h-40 w-48 mx-10 rounded-full hover:border-4 border-black" src="paper.png" alt="paper" /></div>
+            <div id="scissor" class="cursor-pointer"><img class="h-40 w-48 mx-10 rounded-full hover:border-4 border-black" src="scissors.png" alt="scissor" /></div>
+        </div>
+
+        <div class="flex justify-center items-center mt-32 gap-40">
+            <div class="">
+                <p id="user-score" class="text-7xl">0</p>
+                <p class="text-2xl text-center mt-4">You</p>
+            </div>
+            <div>
+                <p id="comp-score" class="text-7xl">0</p>
+                <p class="text-2xl text-center mt-4">Comp</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-24">
+            <p id="msg" class="h-16 w-fit px-2 bg-blue-950 text-white text-center rounded-lg pt-4 font-bold text-2xl">Pick your move</p>
+        </div>
+    </main>
+    <script src="app.cjs"></script>
+</body>
+</html>
